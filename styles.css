@@ -1,0 +1,544 @@
+/* Estilos básicos para el cuerpo del documento */
+body {
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
+  font-family: "Roboto", sans-serif; /* Tipografía principal */
+}
+
+
+/* Estilos para el encabezado fijo */
+header {
+  background-color: transparent; /* Fondo transparente*/
+  border-bottom: 1px solid white; /* Línea inferior blanca */
+  padding: 10px 20px; /* Espaciado interno */
+  display: flex; /* Configura un contenedor flexible */
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  position: fixed; /* Fija el encabezado al desplazarse */
+  top: 0; /* Posición superior */
+  left: 0; /* Posición izquierda */
+  right: 0; /* Posición derecha */
+  z-index: 1000; /* Asegura que el encabezado esté en el frente */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: space-around; /* Espaciado uniforme de elementos */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Logo principal */
+.logo {
+  font-size: 24px; /* Tamaño de fuente grande */
+  font-weight: bold; /* Fuente en negrita */
+  color: #fe8b75; /* Color principal */
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Centrado vertical */
+  width: 60px; /* Ancho fijo */
+}
+
+/* Logo secundario */
+.salwa-logo {
+  height: 30px; /* Altura fija */
+}
+
+/* Menú de navegación */
+.navbar .menu {
+  list-style: none; /* Sin viñetas en la lista */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina relleno */
+  display: flex; /* Contenedor flexible */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Enlaces del menú */
+.navbar .menu li a {
+  text-decoration: none; /* Sin subrayado */
+  color: black; /* Color negro */
+  font-size: 20px; /* Tamaño de fuente */
+  transition: color 0.3s; /* Animación de cambio de color */
+}
+
+.navbar .menu li a:hover {
+  color: #fe8b75; /* Cambia de color al pasar el mouse */
+}
+
+/* Botón de descarga */
+.download-btn {
+  background-color: #fff; /* Fondo blanco */
+  color: black; /* Texto negro */
+  border: 2px solid #fe8b75; /* Borde con color principal */
+  padding: 10px 15px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: small; /* Tamaño de fuente pequeño */
+}
+
+.download-btn:hover {
+  background-color: #fe8b75; /* Fondo cambia al color principal */
+}
+
+/* Contenedor principal */
+.main-box {
+  color: black; /* Color del texto */
+  padding: 100px; /* Espaciado interno */
+  padding-top: 0%; /* Sin espaciado superior */
+  padding-bottom: 0%; /* Sin espaciado inferior */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Columna vertical */
+}
+
+/* Secciones generales */
+section {
+  padding: 100px; /* Espaciado interno */
+}
+
+/* Título de la sección */
+.section-title {
+  border: 1px solid rgba(254, 139, 117, 0.5); /* Borde con transparencia */
+  border-radius: 70%; /* Forma circular */
+  width: max-content; /* Ancho ajustado al contenido */
+}
+
+/* Sobre mí */
+#about-me {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  padding-top: 150px; /* Espaciado superior */
+}
+
+/* Introducción */
+.intro {
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: center; /* Centrado horizontal */
+  gap: 100px; /* Espaciado entre elementos */
+}
+
+/* Contenedor de texto */
+.text-container {
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 500px; /* Ancho máximo */
+  min-width: 300px; /* Ancho mínimo */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: center; /* Centrado vertical */
+}
+
+.text-container h1 {
+  font-size: 2.5rem; /* Tamaño de fuente */
+  line-height: 1.2; /* Altura de línea */
+  margin: 0%; /* Sin márgenes */
+}
+
+/* Resaltado en textos */
+.highlight {
+  color: #fe8b75; /* Color destacado */
+}
+
+.text-container p {
+  margin-top: 2%; /* Espaciado superior */
+  font-size: 1.1rem; /* Tamaño de fuente */
+}
+
+/* Botones dentro de la sección de botones */
+.buttons .btn {
+  display: inline-block; /* Botón en línea */
+  background-color: #fe8b75; /* Fondo principal */
+  color: #fff; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  margin-right: 10px; /* Espaciado derecho */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+.buttons .secondary-btn {
+  background-color: #fff; /* Fondo blanco */
+  color: black; /* Texto negro */
+}
+
+.buttons .btn:hover {
+  opacity: 0.9; /* Cambia la opacidad al pasar el mouse */
+}
+
+/* Iconos */
+.icon {
+  height: 20px; /* Altura fija */
+  fill: #fe8b75; /* Color del ícono */
+}
+
+/* Contenedor de foto */
+.photo-container {
+  position: relative; /* Posicionamiento relativo */
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alineación vertical centrada */
+}
+
+.photo-container img {
+  width: 250px; /* Ancho fijo */
+  height: 270px; /* Altura fija */
+  z-index: 2; /* Sobre el fondo */
+}
+
+/* Formas de fondo */
+.background-shape {
+  position: absolute; /* Posicionamiento absoluto */
+  z-index: 1; /* Detrás de la imagen */
+  border-radius: 3px; /* Bordes ligeramente redondeados */
+}
+
+.background-shape.pink {
+  background-color: #fe8b75; /* Color rosa */
+  width: 115%; /* Más ancho que el contenedor */
+  height: 105%; /* Más alto que el contenedor */
+  top: -30px; /* Posición superior negativa */
+  left: -20px; /* Posición izquierda negativa */
+  z-index: 0; /* Más detrás */
+}
+
+.background-shape.transparent {
+  border: 4px solid black; /* Borde negro */
+  width: 110%; /* Más ancho que el contenedor */
+  height: 100%; /* Altura del contenedor */
+  top: 10px; /* Desplazado hacia abajo */
+  right: 20px; /* Desplazado hacia la derecha */
+  z-index: 0; /* Más detrás */
+}
+
+/* Redes sociales */
+.social-media {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: space-between; /* Espaciado uniforme */
+  min-height: 250px; /* Altura mínima */
+  overflow-x: visible; /* Desbordamiento horizontal visible */
+  max-width: 20px; /* Ancho máximo */
+}
+
+.social-media-text {
+  display: inline-block; /* En línea y bloque */
+  transform: rotate(90deg); /* Rotación de texto */
+  transform-origin: left bottom; /* Origen de la rotación */
+  white-space: nowrap; /* Evita que el texto se divida */
+  font-size: small; /* Tamaño de fuente pequeño */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+.social-media-logos {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  gap: 10px; /* Espaciado entre logos */
+}
+
+.social-media-logo {
+  height: 15px; /* Altura fija para logos */
+}
+
+/* Estadísticas */
+.stats {
+  display: flex; /* Contenedor flexible */
+  justify-content: center; /* Centrado horizontal */
+  gap: 200px; /* Espaciado entre elementos */
+  margin-top: 120px; /* Espaciado superior */
+}
+
+.stat {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+}
+
+.stats .stat h2 {
+  margin: 0%; /* Sin márgenes */
+  color: #fe8b75; /* Color principal */
+  font-size: 2.5rem; /* Tamaño de fuente */
+}
+
+.stats .stat p {
+  margin: 0%; /* Sin márgenes */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Habilidades */
+#skills {
+  display: flex; /* Contenedor flexible */
+  justify-content: center; /* Centrado horizontal */
+  gap: 100px; /* Espaciado entre elementos */
+  padding-top: 150px; /* Espaciado superior */
+}
+
+.skills-grid {
+  max-height: 400px; /* Altura máxima */
+  width: 500px; /* Ancho fijo */
+  display: flex; /* Contenedor flexible */
+  gap: 30px; /* Espaciado entre elementos */
+  flex-wrap: wrap; /* Permite que los elementos envuelvan */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: center; /* Centrado vertical */
+}
+
+.skill {
+  max-width: 250px; /* Ancho máximo */
+}
+
+/* Portafolio */
+#portfolio {
+  display: flex; /* Contenedor flexible */
+  gap: 70px; /* Espaciado entre elementos */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
+/* Galería */
+.gallery {
+  display: flex; /* Contenedor flexible */
+  flex-wrap: wrap; /* Los elementos envuelven */
+  row-gap: 20px; /* Espaciado entre filas */
+  column-gap: 20px; /* Espaciado entre columnas */
+}
+
+.gallery-item {
+  text-align: center; /* Texto centrado */
+  overflow: hidden; /* Oculta contenido desbordado */
+  position: relative; /* Posicionamiento relativo */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+
+.gallery-item img {
+  width: 200px; /* Ancho fijo */
+  height: auto; /* Altura automática */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animaciones */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra en hover */
+}
+
+.gallery-item h4 {
+  margin-top: 10px; /* Espaciado superior */
+  font-size: 1rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+}
+
+/* Educación */
+#education {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  align-items: center; /* Alineación centrada */
+  gap: 50px; /* Espaciado entre elementos */
+}
+
+.education-cards {
+  display: flex; /* Contenedor flexible */
+  justify-content: center; /* Centrado horizontal */
+  gap: 100px; /* Espaciado entre elementos */
+  margin-bottom: 30px; /* Espaciado inferior */
+  flex-wrap: wrap; /* Permite que los elementos envuelvan */
+}
+
+.card {
+  background: #fff; /* Fondo blanco */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 200px; /* Ancho fijo */
+  text-align: left; /* Alineación del texto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.card h3 {
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: #333; /* Color principal */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.card p {
+  font-size: 0.9rem; /* Tamaño de fuente */
+  color: #555; /* Color del texto */
+  line-height: 1.4; /* Altura de línea */
+}
+
+/* Herramientas */
+.tools {
+  display: flex; /* Contenedor flexible */
+  justify-content: center; /* Centrado horizontal */
+  flex-wrap: wrap; /* Permite que los elementos envuelvan */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+.tools img {
+  width: 50px; /* Ancho fijo */
+  height: 50px; /* Altura fija */
+  transition: transform 0.3s ease; /* Animación de transformación */
+}
+
+.tools img:hover {
+  transform: scale(1.2); /* Agranda el ícono al pasar el mouse */
+}
+
+/* Contacto */
+#contact {
+  text-align: center; /* Texto centrado */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  align-items: center; /* Alineación centrada */
+  gap: 50px; /* Espaciado entre elementos */
+}
+
+.contact h2 {
+  font-size: 1.5rem; /* Tamaño de fuente */
+  color: #ff7b72; /* Color principal */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.contact h3 {
+  font-size: 2rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact h3 span {
+  color: #ff5733; /* Color resaltado */
+}
+
+.contact p {
+  color: #555; /* Color del texto */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.text-contact {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  align-items: center; /* Alineación centrada */
+}
+
+.contact-container {
+  display: flex; /* Contenedor flexible */
+  justify-content: space-between; /* Espaciado uniforme */
+  flex-wrap: wrap; /* Permite que los elementos envuelvan */
+  gap: 40px; /* Espaciado entre elementos */
+}
+
+.contact-item {
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Alineación vertical */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact-item:last-child {
+  margin-bottom: 0; /* Sin espaciado inferior */
+}
+
+.contact-icon {
+  width: 40px; /* Ancho fijo */
+  height: 40px; /* Altura fija */
+  background-color: #ff7067; /* Fondo del ícono */
+  border-radius: 20%; /* Bordes redondeados */
+  display: flex; /* Contenedor flexible */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  margin-right: 15px; /* Espaciado derecho */
+}
+
+.contact-icon img {
+  width: 20px; /* Ancho fijo */
+  height: 20px; /* Altura fija */
+}
+
+.contact-text {
+  font-size: 14px; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección vertical */
+  align-items: flex-start; /* Alineación al inicio */
+}
+
+.contact-text .label {
+  color: #888; /* Color del texto */
+  display: block; /* Elemento en bloque */
+}
+
+.contact-text .value {
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Negrita */
+}
+
+/* Formulario de contacto */
+.contact-form {
+  flex: 2; /* Ocupa el doble de espacio */
+  max-width: 700px; /* Ancho máximo */
+}
+
+.form-row {
+  display: flex; /* Contenedor flexible */
+  gap: 20px; /* Espaciado entre filas */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 10px; /* Espaciado interno */
+  font-size: 0.8rem; /* Tamaño de fuente */
+  border: 1px solid #dddddd; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interior */
+  transition: border-color 0.3s ease; /* Animación de borde */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5733; /* Color del borde en foco */
+  outline: none; /* Sin contorno */
+}
+
+.contact-form textarea {
+  resize: none; /* Desactiva el redimensionamiento */
+}
+
+.send-message-btn {
+  display: flex; /* Contenedor flexible */
+  justify-content: flex-end; /* Alineación a la derecha */
+  padding-top: 5%; /* Espaciado superior */
+}
+
+/* Líneas divisorias */
+hr {
+  border: none; /* Sin bordes */
+  height: 1px; /* Altura mínima */
+  background-color: #aaa; /* Color de fondo */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Pie de página */
+footer {
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espaciado interno */
+  font-size: 0.9rem; /* Tamaño de fuente */
+  color: #888; /* Color del texto */
+  display: flex; /* Contenedor flexible */
+  gap: 20px; /* Espaciado entre elementos */
+  justify-content: space-between; /* Espaciado uniforme */
+}
+
+footer p {
+  margin: 5px 0; /* Espaciado vertical */
+}
+
+/* Logos de redes sociales en el pie */
+.social-media-logos-footer {
+  display: flex; /* Contenedor flexible */
+  gap: 10px; /* Espaciado entre logos */
+}
